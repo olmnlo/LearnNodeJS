@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+.header {
+    position: relative; /* needed for absolute positioning inside */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: rgb(119, 119, 119);
+    font-size: 2rem;
+    border-radius: 100px 5px 100px 6px;
+    padding-left: 50px; /* more spacing to accommodate circle */
+    margin-bottom: 6rem;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-left: none;
+    border-bottom: none;
+    overflow: visible; /* important */
+}
+
+.circle {
+    position: absolute;
+    left: 0px; /* adjusted for circle width */
+    top: 9.9px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(119, 119, 119);
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 1; /* place above background, below text if needed */
+}
+
+
+p {
+    margin-left: 200px;
+    text-align: justify;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    color: white;
+}
+
+h6 {
+    margin: 10px;
+}
