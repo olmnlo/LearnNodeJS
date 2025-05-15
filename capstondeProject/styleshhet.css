@@ -1,18 +1,18 @@
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color: #213448;
 }
 
 .container {
     display: grid;
     gap: 10px;
-    float: right;
-    width: 70%;
-    padding-right: 16%;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .container > * {
     margin: 0;
-    margin-left: 100px;
     background-color: #547792;
     border-radius: 10px;
     padding-bottom: 10px ;
@@ -27,12 +27,15 @@ span {
     display: flex;
     justify-content: space-between;
     margin-bottom: -10px;
+    margin-top: -10px;
+    font-size: 20px;
 }
 
 ul {
     margin: 5px;
     text-align: justify;
     padding-right: 50px;
+    font-size: 16px;
 }
 
 .header {
@@ -51,7 +54,6 @@ ul {
     border-left: none;
     border-bottom: none;
     text-transform: capitalize;
-    width: 97%;
 }
 
 .circle {
@@ -78,9 +80,16 @@ p {
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
+div > footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 25, 25);
+    min-height: 100px;
     clear: both;
+}
+.footer {
+    position: relative;
 }
 p, h1, h6, li, footer {
     color: white;
