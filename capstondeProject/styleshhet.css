@@ -1,25 +1,29 @@
 body {
-    background-color: #213448;
+    background-color: #191937;
 }
 
-.container {
+/* .container {
     display: grid;
     gap: 10px;
     float: right;
     width: 70%;
     padding-right: 16%;
-}
+} */
 
-.container > * {
+/* .container > * {
     margin: 0;
     margin-left: 100px;
     background-color: #547792;
     border-radius: 10px;
     padding-bottom: 10px ;
-}
+} */
 
 span {
     font-weight: bold;
+}
+
+.duration {
+    color: #b9e1ff;
 }
 
 .subject-container {
@@ -33,38 +37,9 @@ ul {
     margin: 5px;
     text-align: justify;
     padding-right: 50px;
+    margin-left: 50px;
 }
 
-.header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #ECEFCA;
-    background-color: #547792;
-    font-size: 2rem;
-    border-radius: 100px 5px 100px 6px;
-    padding-left: 50px; 
-    margin-bottom: 6rem;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    border-left: none;
-    border-bottom: none;
-    text-transform: capitalize;
-    width: 97%;
-}
-
-.circle {
-    position: absolute;
-    left: 0px;
-    top: 9.9px;
-    height: 100px;
-    width: 100px;
-    background-color: #547792;
-    border-radius: 50%;
-    border: 2px solid black;
-    z-index: 1;
-}
 
 .skills div {
     display: flex;
@@ -78,12 +53,14 @@ p {
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    clear: both;
+#aboutmeP {
+    margin-left: 30px ;
+    text-align: justify;
+    font-weight: 400;
 }
+
 p, h1, h6, li, footer {
-    color: white;
+    color: #e0e0f1;
 }
 
 h1 {
@@ -93,4 +70,27 @@ h1 {
 
 h6 {
     margin: 10px;
+}
+
+img > {
+ margin-left: 20px;
+}
+
+.img-prog {
+    height: 100px;
+    padding: 5px;
+}
+
+button {
+    margin-right: 20px;
+}
+
+.btn {
+    color: #e0e0f1; 
+    border-radius: 40px;
+    background-color: #494ca2;
+}
+
+#copy-right{
+    color: #e0e0f1; 
 }

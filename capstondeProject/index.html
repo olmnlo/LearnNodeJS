@@ -4,30 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="styleshhet.css">
 </head>
 <body>
-    <div class="circle"></div>
-    <div class="header">
-        <h6>about</h6>
-        <h6>experince</h6>
-        <h6>education</h6>
-        <h6>Achievements/Participations</h6>
-        <h6>certificates</h6>
-        <h6>skills</h6>
-    </div>
+
+    <nav class="navbar navbar-expand-lg " style="background-color: #e0e0f1;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Assets/file-earmark-person-fill.svg" alt="cv" height="30px" style="margin-top: 0px;"> Cv</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="display: inline;">
+                <img src="./Assets/information-button.png" alt="about me" height="30px" style="margin-top:1px;">
+                <a href="#aboutme"><button type="button" class="btn">About me</button></a>
+              </li>
+              <li class="nav-item">
+                <img src="./Assets/suitcase.png" alt="Experience" height="30px" style="margin-bottom:5px;">
+                <a href="#experience"><button type="button" class="btn">Experience</button></a>
+              </li>
+              <li class="nav-item">
+               <img src="./Assets/school.png" alt="Education" height="30px" style="margin-bottom:10px;">
+               <a href="#education"><button type="button" class="btn">Education</button></a>
+              </li>
+              <li class="nav-item">
+                <img src="./Assets/skill.png" alt="skills" height="30px"style="margin-bottom:10px;">
+                <a href="#skills"><button type="button" class="btn">Skills</button></a>
+              </li>
+              <li class="nav-item">
+                <img src="./Assets/programming.png" height="30px" alt="programming">
+                <a href="#programming-lang"><button type="button" class="btn">Programming Language</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <div class="container">
-        <div class="about">
+        <div class="about" id="aboutme">
             <h1>about</h1>
-            <p>Hello world I am hussam</p>
+            <p id="aboutmeP">
+              Recent Computer Science graduate with <span>COOP experience at Trendyol Arabia,</span> specializing in <span>distributed systems and
+              monitoring tools.</span> Eager to join a forward-thinking team where I can apply my <span>programming skills (Java/Python/Go), Agile
+              collaboration, and competition-driven analytical abilities</span> to deliver high-impact solutions.
+            </p>
         </div>
-
-        <div class="experince">
+<hr>
+        <div class="experince" id="experience">
             <h1>experince</h1>
             <div class="subject-container">
                 <p>Associate software developer COOP At Trendyol Arabia for Trading Company</p> 
-                <p>Jan 2025 - Present</p>
+                <p class="duration">Jan 2025 - Present</p>
             </div>
             <ul>
                 <li>Designed <span>RESTful APIs</span> for the Job Monitoring & Alerting system.</li>
@@ -37,54 +66,112 @@
                 <li>Implemented <span>Kafka</span> for asynchronous service communication. </li>
                 <li>Integrated <span>Prometheus/Grafana</span> for metric collection and monitoring. </li>
             </ul>
-            <div class="subject-container">
-                <p>Help Session Instructor in Python at Jubail Industrial College.</p>
-                <p>Sep 2023 - Dec 2023</p>
-            </div>
-            <ul>
-                <li>Assisted in teaching the <span>CS110 Python</span> programming course to college students.</li>
-                <li>Supported students during lab sessions by explaining core programming concepts.</li>
-                <li>Helped students debug and improve their code.</li>
-                <li>Collaborated with the course instructor to prepare exercises and ensure smooth lab operations.</li>
-                <li>Contributed to enhancing student understanding through one-on-one support during labs.</li>
-            </ul>
+            <br>
+            
         </div>
-
-        <div class="education">
+<hr>
+        <div class="education" id="education">
             <h1>Education</h1>
             <div class="subject-container">
                 <p>Bachelor in Computer Science Jubail Industrial College</p>
-                <p>Aug 2020 - May 2025</p>
+                <p class="duration">Aug 2020 - May 2025</p>
             </div>
         </div>
-
-        <div class="achievement">
-            <h1>achievements/Participations</h1>
+<hr>
+        <div class="Additional">
+          <h1>Additional</h1>
+          <div class="subject-container">
+            <p>Active Member | Computer Club – Jubail Industrial college </p>
+            <p class="duration">Jan 2022 - May 2025</p>
+          </div>
             <ul>
-                <li>Achieved <span>2nd place</span> in the <span>Techathon</span> event at <span>King Fahd University of Petroleum & Minerals (KFUPM)</span></li>
-                <li>Achieved <span>2nd place</span> in the <span>JIC CPC (Jubail Industrial College Competitive Programming Competition).</span></li>
-                <li>Achieved <span>5th place</span> in the <span>JIC CTF (Jubail Industrial College Capture the Flag)</span></li>
-                <li>Achieved <span>5th place</span> in the <span>JIC UI/UX Design Competition event at Jubail Industrial College.</span></li>
+                <li><span>Won top rankings in JIC competitions:</span> Capture The Flag v1 (5th), Capture The Flag v2 (3rd), Competitive Programming Contest v1 (5th), Competitive Programming Contest v2 (2nd), and UI/UX Design Contest (5th).</li>
+                <li>Assistant and organizing industrialthon exhibition with 100+ participants</li>
+                <li><span>Help Session Instructor in Python for 4 months</span>: Assisted in teaching Python (CS110), supporting students with debugging, exercises, and one-on-one lab guidance.</li>
+                <li>Participated in Projects EXPO24 to show the graduation project.</li>
                 <li>Participated in the <span>Google CDC Hackathon (Google Cloud Developers Community)</span> at <span>Jeddah University.</span></li>
                 <li>Participated in the <span>Capture the Flag Competition</span> at the <span>6th National Computing Colleges Conference</span> at <span>Imam Abdulrahman bin Faisal University.</span></li>
             </ul>
         </div>
+<hr>
 
-        <div class="skills">
-            <h1>skills</h1>
-            <div>
-                <ul>
-                    <li><span>Programming Languages:</span> Skilled in Python, Java, GO, JavaScript, HTML, CSS, PHP and C++.</li>
-                    <li><span>Designing:</span> Experienced in using <span>Figma for UI/UX</span> design and prototyping.</li>
-                    <li><span>Database:</span> Familiar with <span>MySQL, MongoDB, PostgresSQL.</span></li>
-                    <li><span>Statistics and probability:</span> using <span>IBM SPSS</span> for performing statistical analyses, including descriptive and 
-                        inferential statistics, regression analysis, and hypothesis testing. </li>
-                    <li><span>Familiar with:</span> Kafka, SpringBoot, Prometheus, Grafana, ElasticSearch, JIRA and Git</li>
-                </ul>
+        <div class="programming-languages" id="skills">
+          <h1>skiils</h1>
+          <div class="programming-language-items">
+            <div class="row grid-nowrap">
+              <div class="col-2">
+                <img src="./Assets/python.png" alt="python" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/css.svg" alt="C++" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/docker.svg" alt="Docker" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/java.svg" alt="Java" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/html-5.svg" alt="HTML" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/mysql.svg" alt="mySQL" class="img-prog" style="height: 120px; margin-left: -20px;">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/Go-Logo_Blue.png" alt="GoLang" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/js.png" alt="JavaScript" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/figma.png" alt="Figma" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/postgre.png" alt="PostgreSQL" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/kafka-svgrepo-com.svg" alt="Kafka" class="img-prog" style="margin-top: 20px; height: 120px;">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/grafana-svgrepo-com.svg" alt="Grafana" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="./Assets/prometheus-svgrepo-com.svg" alt="Prometheus" class="img-prog">
+              </div>
+              <div class="col-2">
+                <img src="" alt="">
+              </div>
             </div>
+          </div>
+        </div>
+<hr>
+        <div class="certificate">
+          <h1>certificate</h1>
+          <ul>
+            <li>Completed <span>15 hours GO</span> language course and obtained skills in <span>Go, PostgreSQL, Data-driven Decision Making and REST APIs</span></li>
+            <li>Completed <span>32 hours Backend Developer course</span> from <span>Trendyol</span> and obtained skills <span>PostgreSQL, Spring Framework, Spring Boot, REST APIs and Application Programming Interfaces (API)</span></li>
+            <li>Completed <span>Java (Basic)</span> course from <span>HackerRank</span></li>
+            <li>Completed <span>56 hour of 100 days of code: the complete python pro Bootcamp</span> course and I obtained skills <span>Problem Solving, Code Review, Programming Concepts, Debugging, Application Programming Interfaces (API) and Python (Programming Language).</span></li>
+            <li>Completed <span>Data Analysis with Python</span> course and I obtained skills <span>Data Analytics, pandas and NumPy</span></li>
+          </ul>
         </div>
     </div>
 
-    <footer>myemail, number</footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted"><p>© 2025 Hussam Rseume</p></span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="https://www.linkedin.com/in/hussam-s-al-ghamdi-34008a240/"><img src="./Assets/linkedin.png" alt="linkedin" height="30px"></a></li>
+            <li class="ms-3"><a href="https://github.com/olmnlo"><img src="./Assets/github.png" alt="github" height="30px"></a></li>
+          </ul>
+        </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
