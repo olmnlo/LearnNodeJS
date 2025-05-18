@@ -78,6 +78,8 @@ button {
     color: #e0e0f1; 
     border-radius: 40px;
     background-color: #494ca2;
+    margin-left: 4px;
+    width: 110px;
 }
 
 #copy-right{
@@ -86,4 +88,8 @@ button {
 
 .nav-item{
     padding-top: 10px;
+}
+
+hr {
+    color: #e0e0f1;
 }
