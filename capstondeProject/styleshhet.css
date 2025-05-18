@@ -2,21 +2,6 @@ body {
     background-color: #191937;
 }
 
-/* .container {
-    display: grid;
-    gap: 10px;
-    float: right;
-    width: 70%;
-    padding-right: 16%;
-} */
-
-/* .container > * {
-    margin: 0;
-    background-color: #547792;
-    border-radius: 10px;
-    padding-bottom: 10px ;
-} */
-
 span {
     font-weight: bold;
 }
@@ -94,4 +79,8 @@ button {
 
 #copy-right{
     color: #e0e0f1; 
+}
+
+.nav-item{
+    padding-top: 10px;
 }
